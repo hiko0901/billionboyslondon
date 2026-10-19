@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BILLION BOYS LONDON</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div>
+      <a href="#" class="brand">BILLION BOYS LONDON</a>
+      <nav class="gender-nav">
+        <button type="button" data-filter="male">MALE</button>
+        <button type="button" data-filter="female">FEMALE</button>
+      </nav>
+    </div>
+    <a href="#" class="cart" id="cart-open">CART (<span id="cart-count">0</span>)</a>
+  </header>
+
+  <section class="promo">
+    <!-- 動画ファイル変更(mp4） -->
+    <video src="promo.mp4" autoplay muted loop playsinline></video>
+  </section>
+
+  <main class="products" id="products"></main>
+
+  <!-- カート（右からスライドして開く） -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-label="CART">
+    <div class="cart-head">
+      <span>CART</span>
+      <button type="button" id="cart-close">CLOSE</button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-foot">
+      <p class="cart-note">送料・税は決済画面で表示されます</p>
+      <p class="cart-message" id="cart-message"></p>
+      <button type="button" class="checkout-btn" id="checkout-btn">CHECKOUT</button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
